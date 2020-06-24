@@ -1,0 +1,17 @@
+{{#if error}}    
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}} {{!-- recibe el texto que usa el controlador --}}
+    <button type="button" class="close" data-dismiss="alert" arial-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{/if}}
+
+{{#each errors}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}} {{!-- recibe el texto que usa el controlador --}}
+    <button type="button" class="close" data-dismiss="alert" arial-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{/each}}
